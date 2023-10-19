@@ -1,0 +1,33 @@
+<h1>Chat!!</h1>
+
+<div>
+    <h2>Escribe tu mensaje aquí"</h2>
+	<form action="/chat" method="get" onsubmit="return addNewMessage(this)">
+        <label for="user">User:</label>
+        <input type="text" id="userForm" name="Title"><br> 
+        <label for="message">Message:</label>
+        <input type="text" id="messageForm" name=""><br>
+            
+        
+        <input type="submit" value="Enviar mensaje">
+    </form>
+	
+</div>
+<div>
+    <ul>
+
+
+    </ul>
+</div>
+
+
+
+<script src="/socket.io/socket.io.js"></script>             
+<script src="/js/chat.js"></script>      
+<script>
+    console.log("Desde la platilla")
+</script>
+
+<h2>Chat Log</h2>                       
+
+    <div id="chatLog"></div>
